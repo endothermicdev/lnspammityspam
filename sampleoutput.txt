@@ -1,32 +1,24 @@
-looking for log file ~/lnspammityspam/cl.log
-node check channel list:
-   -redacted-
-log end: 2022-04-05T14
-log_start: 2022-03-22T14
-found start time.
-
-spam found: 396629 of 1354631 log entries.
-43095 valid node announcements found of 1354631 log entries.
-843604 valid channel updates found of 1354631 log entries.
-total valid channel updates/hr: 2504.3
-log file processing start: 2022-03-22T14:00:06.453
-log file processing end: 2022-04-05T14:51:43.258
-log time = 336.86 hrs
-spam updates and node announcements filtered to lists.
-updates filtered for duplicates: 225638
-announcements filtered for duplicates: 148
-total spam updates: 396395
-total filtered spam updates: 225638
-total spam announcements: 234
-total filtered spam announcements: 148
-total spam updates/hr: 669.8
-total spam announcements/hr: 0.4
-unique spammy channels: 29235
+Processing log file cl.log
+Time range: 2022-03-22T14:00:06.453 to 2022-04-05T14:51:43.258
+  total log entries: 1354631, total gossip in log: 1283328
+  total spam gossip messages received (cupdate + nannounce):  396629
+  spam percentage of gossip received: 30.91%
+  valid channel_upates: 843614 (including duplicates)
+  unique half-channels: 160889
+  spam channel_upates:  225638 (received 396395 times in total.)
+  total channel_updates/hr: 2504.3
+  spam node announcements: 148, valid node announcements: 43095
+  unique spammy nodes: 11
+  spam announcements: 148 (received 234 times in total.)
+total spam announcements generated: 0.4/hr
+total unique spammy channels over 14 days: 29235
+...representing 18.2% of half-channels.
 selected channels with 14 spam updates:
-	-redacted-
+	- redacted -
 selected channels with 56 spam updates:
-	-redacted-
-histogram data:
+	- redacted -
+spam channel_update histogram data:
+<rate-limit count> <number of offending nodes> <portion of total spam>
   0:    0   0.0%
   1: 7057  24.1%
   2: 4483  39.5%
@@ -78,5 +70,3 @@ histogram data:
  48:   21  98.4%
  49:   23  98.5%
 50+:  433 100.0%
-Node analysis:
-  chan -redacted- rate limited 8 times
